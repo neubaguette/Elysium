@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysium</title>
+    <link rel="stylesheet" href="/code/style.css">
+    <link rel="stylesheet icon" href="/media/CarRental.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="logoAndText">
+            <a href="/code/index.html" class="logo">Elysium</a>
+            <div class="collaborationIcon">&times;</div>
+            <div class="Porschelogo"><img class="PorscheLogo" src="/media/PorscheLogo.png" alt="Porsche"></div>
+        </div>
+        <nav class="navbar">
+            <a href="/code/index.html">HOME</a>
+            <a href="/code/rent.html">RENT A CAR</a>
+            <a href="/code/about.html">ABOUT US</a>
+            <a href="/code/contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="video-wrap">
+            <video autoplay loop muted>
+                <source src="/media/Porsche.Mission X.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1>Porsche Mission X </h1>
+        </div>
+    </div>
+    <div class="about-text">
+        <h2>Welcome to Elysium</h2>
+        <p>Your source for the ultimate in <b>Porsche luxury and power.</b><br> Feel the power and elegance. <br>Your adventure begins <b><a href="/code/rent.html" class="textchange">here</a></b></p>
+    </div>
+    <div class="content">
+        <div class="main-text">
+            <h2>Our Advantages</h2>
+        </div>
+        <div class="info-blocks">
+            <div class="info-block">
+                <img src="/media/Car.svg" alt="Car">
+                <p>Large Selection</p>
+                <!-- <p>Elysium offers a huge selection of Porsche cars for rent</p> -->
+            </div>
+            <div class="info-block">
+                <img src="/media/Card.svg" alt="Card">
+                <p>Great Price</p>
+                <!-- <p>Elysium offers the lowest and fairest prices for cars</p> -->
+            </div>
+            <div class="info-block">
+                <img src="/media/Phone.svg" alt="Phone">
+                <p>Quick Supports</p>
+                <!-- <p>Elysium offers the lowest and fairest prices for cars</p> -->
+            </div>
+            <div class="info-block">
+                <img src="/media/award-01-svgrepo-com.svg" alt="Award">
+                <p>Awards</p>
+                <!-- <p>Elysium voted the best car rental company by Time magazine in 2025</p> -->
+            </div>
+            <div class="info-block">
+                <img src="/media/Security2.svg" alt="Security">
+                <p>Security</p>
+                <!-- <p>Elysium voted the best car rental company by Time magazine in 2025</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="mostrentcar">
+        <div class="main-text-next">
+            <h2>The most common cars for rent</h2>
+        </div>
+        <div class="mostrentcar-bloks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2015-Porsche-918-Spyder-004-1600.jpg" alt="Spyder 918">
+            <button class="details-button" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="mostrentcar-bloks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2019-Porsche-Macan-S-005-1600-1920H.jpg" alt="Macan S">
+            <button class="details-button" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="mostrentcar-bloks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2020-Porsche-Taycan-Turbo-005-1600.jpg" alt="Taycan Turbo">
+            <button class="details-button" onclick="redirectToPage()">Learn more</button>
+        </div>
+    </div>
+    <script src="/code/script.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-instLogo">
+                    <a href="https://www.instagram.com/elysium_rent/" target="_blank">
+                        <img src="/media/iconinst.svg" alt="Instagram Logo">
+                    </a>
+                </div>
+                <div class="footer-PorscheLogo">
+                    <a href="https://www.porsche.com/central-eastern-europe/en/_romania_/" target="_blank">
+                        <img src="/media/PorscheLogo.png" alt="Porsche Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>© 2024 Elysium. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

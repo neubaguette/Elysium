@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysium | RENT A CAR</title>
+    <link rel="stylesheet" href="/code/style.css">
+    <link rel="stylesheet icon" href="/media/CarRental.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="logoAndText">
+            <a href="/code/index.html" class="logo">Elysium</a>
+            <div class="collaborationIcon">&times;</div>
+            <div class="Porschelogo"><img class="PorscheLogo" src="/media/PorscheLogo.png" alt="Porsche"></div>
+        </div>
+        <nav class="navbar">
+            <a href="/code/index.html">HOME</a>
+            <a href="/code/rent.html">RENT A CAR</a>
+            <a href="/code/about.html">ABOUT US</a>
+            <a href="/code/contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <div class="car-rent-text">
+        <h2>Choose your car</h2>
+        <p>Choose your car for rent right now</p>
+    </div>
+    <div class="car-for-rent">
+        <div class="car-blocks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2015-Porsche-918-Spyder-004-1600.jpg" alt="Spyder 918">
+            <button class="details-button" id="details-button-1" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="car-blocks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2019-Porsche-Macan-S-005-1600.jpg" alt="Macan S">
+            <button class="details-button" id="details-button-2" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="car-blocks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2020-Porsche-Taycan-Turbo-005-1600.jpg" alt="Taycan Turbo">
+            <button class="details-button" id="details-button-3" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="car-blocks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2022-Porsche-Cayenne-Turbo-GT-002-1600.jpg" alt="Cayenne Turbo GT">
+            <button class="details-button" id="details-button-4" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="car-blocks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2024-Porsche-Panamera-Turbo-E-Hybrid-002-1600.jpg" alt="Panamera Turbo E-Hybrid">
+            <button class="details-button" id="details-button-5" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="car-blocks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2020-Porsche-911-Turbo-S-001-1600.jpg" alt="911 Turbo S">
+            <button class="details-button" id="details-button-6" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="car-blocks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2023-Porsche-911-GT3-RS-001-1440w.jpg" alt="911 GT3 RS">
+            <button class="details-button" id="details-button-7" onclick="redirectToPage()">Learn more</button>
+        </div>
+    </div>
+    <div id="characteristics-auto" style="display: none;">
+        <div class="video-wrapper">
+            <video autoplay loop muted>
+                <source src="/media/918Spyder.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="car-name">
+            <h2>Porsche 918 Spyder</h2>
+        </div>
+    </div>
+    <script src="/code/rent.js"></script>
+    <div class="choose-car">
+        <h2>Fill out this form to book a car</h2>
+    </div>
+    <form action="#" method="post">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+
+        <label for="surname"></label>
+        <input type="text" id="surname" name="surname" placeholder="Your surname..">
+
+        <label for="email"></label>
+        <input type="text" id="email" name="email" placeholder="Your E-mail..">
+
+        <label for="car">Choose a car</label>
+        <select name="car" id="car">
+            <option value="918 Spyder">Porsche 918 Spyder</option>
+            <option value="Macan S">Porsche Macan S</option>
+            <option value="Taycan Turbo S">Porsche Taycan Turbo S</option>
+            <option value="Cayenne Turbo GT">Porsche Cayenne Turbo GT</option>
+            <option value="Panamera Turbo E-Hybrid">Porsche Panamera Turbo E-Hybrid</option>
+            <option value="911 Turbo S">Porsche 911 Turbo S</option>
+            <option value="911 GT3 RS">Porsche 911 GT3 RS</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-instLogo">
+                    <a href="https://www.instagram.com/elysium_rent/" target="_blank">
+                        <img src="/media/iconinst.svg" alt="Instagram Logo">
+                    </a>
+                </div>
+                <div class="footer-PorscheLogo">
+                    <a href="https://www.porsche.com/central-eastern-europe/en/_romania_/" target="_blank">
+                        <img src="/media/PorscheLogo.png" alt="Porsche Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>© 2024 Elysium. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="characteristics-auto">
+        <div class="video-wrapper">
+          <video autoplay loop muted>
+            <source src="/media/918Spyder.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="car-name">
+          <h2>Porsche 918 Spyder</h2>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</html>
+

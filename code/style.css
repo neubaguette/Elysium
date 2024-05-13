@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f2f3f4;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 3px; 
+}
+
+/*--------------------------------*/
+/*-------------header-------------*/
+/*--------------------------------*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    padding: 20px 20%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f3f4;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logoAndText{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    float: left;
+    color: #9e0100aa;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.logo:hover,
+.logo.active{
+    color: #DB1B1B;
+}
+
+.collaborationIcon{
+    font-size: 30px;
+    margin: 0 30px;
+}
+
+.PorscheLogo{
+    height: 35px;
+    width: 100%;
+}
+
+.navbar a{
+    font-family: "Dosis", sans-serif;
+    font-size: 25px;
+    color: #9e0100aa;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#DB1B1B;
+}
+
+/*--------------------------------*/
+/*-------------index--------------*/
+/*--------------------------------*/
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video-wrap{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 100%;
+}
+
+video{
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family: "Dosis", sans-serif;
+    position: absolute;
+    bottom: 30px; 
+    left: 15%;
+    transform: translateX(-50%); 
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    border-radius: 0 0 20px 20px ;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 250px;
+}
+
+.main-text{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    margin: 30px;
+}
+
+.info-blocks{
+    display: flex;
+}
+
+.info-block{
+    margin: 0 15px;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: auto;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35);
+}
+
+.info-block:hover,
+.info-block.active{
+    color: #DB1B1B;
+}
+
+.info-block p{
+    font-family: "Dosis", sans-serif;
+    font-size: 32px;
+    margin: 10px;
+}
+
+.info-block img{
+    display: flex;
+    margin: 0 auto 10px;
+    max-width: 700px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.content-next{
+    position: relative;
+    text-align: center;
+}
+
+.blendImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.info-cont{
+    position: relative;
+    z-index: 1;
+}
+
+.about-text p{
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    font-size: 42px;
+    margin: 45px;
+    margin-bottom: 100px;
+}
+.about-text h2{
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 110px;
+    margin: 50px;
+}
+
+.textchange{
+    color: #000;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.textchange:hover,
+.textchange.active{
+    color: #DB1B1B;
+}
+
+.mostrentcar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 250px;
+    padding: 50px;
+}
+
+.main-text-next {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-text-next h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+}
+
+.mostrentcar-bloks{
+    position: relative;
+    margin: 0 15px;
+    width: 500px;
+    height: 700px;
+    border: 3px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mostrentcar-bloks img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.details-button{
+    font-family: "Dosis", sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.details-button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-text h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.form-text p{
+    font-family: "Dosis", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+/*--------------------------------*/
+/*-------------rent---------------*/
+/*--------------------------------*/
+
+.car-for-rent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+
+.car-rent-text h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 86px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.car-rent-text p{
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    font-size: 36px;
+}
+
+.car-blocks{
+    position: relative;
+    width: calc(33.33% - 30px);
+    margin: 0 15px 30px;
+    height: 700px;
+    width: 500px;
+    border: 3px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.car-blocks img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.details-button{
+    font-family: "Dosis", sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.car-blocks:hover .details-button {
+    opacity: 1;
+}
+
+.details-button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.choose-car h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 52px;
+    text-align: center;
+}
+
+.book-car-form{
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #f2f3f4;
+    padding: 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f3f4;
+    padding: 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+input[type=text], select {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+label[for="car"]{
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+}
+
+button[type=submit] {
+    background-color: #9e0100aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #DB1B1B;
+}
+
+/* .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+
+/*--------------------------------*/
+/*-------------about--------------*/
+/*--------------------------------*/
+
+.main-text-about h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 130px;
+    padding: 30px;
+}
+
+.main-text-about p{
+    font-family: "Dosis", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.main-text-main{
+    font-family: "Dosis", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1980px;
+    margin: 0 auto;
+}
+
+.founders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.founder-text h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin: 30px;
+}
+
+.Tates{
+    display: flex;
+}
+
+.AndrewTate{
+    position: relative;
+    margin: 0 15px;
+    width: auto;
+    height: 700px;
+    border: 3px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.AndrewTate img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.TristanTate{
+    position: relative;
+    margin: 0 15px;
+    width: auto;
+    height: 700px;
+    border: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.TristanTate img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.Tates-button{
+    font-family: "Dosis", sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.footer{
+    background-color: #f2f3f4;
+    padding: 10px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+}
+
+.footer-content{
+    max-width: 1900px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left{
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.footer-instLogo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footer-PorscheLogo img{
+    width: auto;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.footer-right p{
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    color: #000;
+}
+
+/*--------------------------------*/
+/*-------------contact------------*/
+/*--------------------------------*/
+
+.content-contactus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactus-main-text h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 72px;
+    margin-top: 120px;
+    
+}
+
+.contactus-main-text p{
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form{
+    border-radius: 5px;
+    background-color: #f2f3f4;
+    padding: 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+input[type=text], select, textarea {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    background-color: #9e0100aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #DB1B1B;
+}
+
+.map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.map h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.map p{
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+iframe{
+    width: 1700px;
+    height: 750px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35);
+}

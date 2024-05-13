@@ -1,0 +1,447 @@
+    <div class="container-form">
+        <div class="form-row">
+            <div class="form-halfrow">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-halfrow">
+                <label for="name">Surname</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+        </div>
+        <div class="form-fullrow">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="video-wrap">
+            <video autoplay loop muted>
+                <source src="/media/Porsche.Mission X.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1>Porsche Mission X </h1>
+        </div>
+    </div>
+    <div class="about-text">
+        <h2>Welcome to Elysium</h2>
+        <p>Your source for the ultimate in <b>Porsche luxury and power.</b> <br> Feel the power and elegance. <br>Your adventure begins <b><a href="/code/rent.html" class="textchange">here</a></b></p>
+    </div>
+    <div class="content">
+        <div class="main-text">
+            <h2>Our Advantages</h2>
+        </div>
+        <div class="info-blocks">
+            <div class="info-block">
+                <img src="/media/Car.svg" alt="Car">
+                <p>Large Selection</p>
+                <!-- <p>Elysium offers a huge selection of Porsche cars for rent</p> -->
+            </div>
+            <div class="info-block">
+                <img src="/media/Card.svg" alt="Card">
+                <p>Great Price</p>
+                <!-- <p>Elysium offers the lowest and fairest prices for cars</p> -->
+            </div>
+            <div class="info-block">
+                <img src="/media/Phone.svg" alt="Phone">
+                <p>Quick Supports</p>
+                <!-- <p>Elysium offers the lowest and fairest prices for cars</p> -->
+            </div>
+            <div class="info-block">
+                <img src="/media/award-01-svgrepo-com.svg" alt="Award">
+                <p>Awards</p>
+                <!-- <p>Elysium voted the best car rental company by Time magazine in 2025</p> -->
+            </div>
+            <div class="info-block">
+                <img src="/media/Security2.svg" alt="Security">
+                <p>Security</p>
+                <!-- <p>Elysium voted the best car rental company by Time magazine in 2025</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="mostrentcar">
+        <div class="main-text-next">
+            <h2>The most common cars for rent</h2>
+        </div>
+        <div class="mostrentcar-bloks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2015-Porsche-918-Spyder-004-1600.jpg" alt="Spyder 918">
+            <button class="details-button" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="mostrentcar-bloks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2019-Porsche-Macan-S-005-1600-1920H.jpg" alt="Spyder 918">
+            <button class="details-button" onclick="redirectToPage()">Learn more</button>
+        </div>
+        <div class="mostrentcar-bloks" onmouseover="showDetailsButton(this)" onmouseout="hideDetailsButton(this)">
+            <img src="/media/2020-Porsche-Taycan-Turbo-005-1600.jpg" alt="Spyder 918">
+            <button class="details-button" onclick="redirectToPage()">Learn more</button>
+        </div>
+    </div>
+    <script src="/code/script.js"></script>
+    <div class="form-text">
+        <h2>Have questions?</h2>
+        <p>Send this form for contact!</p>
+    </div>
+
+
+
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f3f4;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoAndText{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    float: left;
+    color: #9e0100aa;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.logo:hover,
+.logo.active{
+    color: #DB1B1B;
+}
+
+.collaborationIcon{
+    font-size: 30px;
+    margin: 0 30px;
+}
+
+.navbar a{
+    font-family: "Dosis", sans-serif;
+    font-size: 25px;
+    color: #9e0100aa;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#DB1B1B;
+}
+
+
+
+
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video-wrap{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 100%;
+}
+
+video{
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family: "Dosis", sans-serif;
+    position: absolute;
+    bottom: 30px; 
+    left: 15%;
+    transform: translateX(-50%); 
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    border-radius: 0 0 20px 20px ;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 250px;
+}
+
+.main-text{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    margin: 30px;
+}
+
+.info-blocks{
+    display: flex;
+}
+
+.info-block{
+    margin: 0 15px;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: auto;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35);
+}
+
+.info-block:hover,
+.info-block.active{
+    color: #DB1B1B;
+}
+
+/* .info-block h3{
+    font-family: "Dosis", sans-serif;
+    font-size: 42px;
+    margin: 20px;
+} */
+
+.info-block p{
+    font-family: "Dosis", sans-serif;
+    font-size: 32px;
+    margin: 10px;
+}
+
+.info-block img{
+    display: flex;
+    margin: 0 auto 10px;
+    max-width: 700px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.content-next{
+    position: relative;
+    text-align: center;
+}
+
+.blendImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.info-cont{
+    position: relative;
+    z-index: 1;
+}
+
+.about-text p{
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    font-size: 42px;
+    /* padding: 30px; */
+    margin: 45px;
+    margin-bottom: 100px;
+}
+.about-text h2{
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 120px;
+    /* padding: 50px; */
+    margin: 45px;
+}
+
+.textchange{
+    color: #000;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.textchange:hover,
+.textchange.active{
+    color: #DB1B1B;
+}
+
+.mostrentcar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 250px;
+    padding: 50px;
+}
+
+.main-text-next {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-text-next h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+}
+
+.mostrentcar-bloks{
+    position: relative;
+    margin: 0 15px;
+    /* text-align: center; */
+    width: 500px;
+    height: 700px;
+    border: 3px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mostrentcar-bloks img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.details-button{
+    font-family: "Dosis", sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.details-button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-text h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.form-text p{
+    font-family: "Dosis", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.container-form{
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.form-halfrow{
+    position: relative;
+    flex-basis: 50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.form-fullrow{
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus + label {
+    top: 5px;
+    font-size: 12px;
+    color: #555;
+}
+
+
+2222223dqdd
+
+.founder-text h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 90px;
+    text-align: center;
+}
+
+.AndrewTate,
+.TristianTate{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 300px;
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.AndrewTate img,
+.TristianTate img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
