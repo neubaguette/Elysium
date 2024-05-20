@@ -1,0 +1,27 @@
+<?php
+// Проверяем, была ли отправлена форма
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Получаем данные из формы
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    
+    // Формируем строку с данными для записи в файл
+    $data = "Name: $name\nEmail: $email\nSubject: $subject\n\n";
+    
+    // Открываем файл для записи (если он не существует, PHP создаст его)
+    $file = fopen("C:/OpenServer/domains/Elysium2/data/data.txt", "a");
+    
+    // Записываем данные в файл
+    fwrite($file, $data);
+    
+    // Закрываем файл
+    fclose($file);
+    
+    // Оповещаем пользователя об успешной отправке данных
+    echo "Your message has been sent successfully.";
+} else {
+    // Если форма не была отправлена, перенаправляем пользователя на страницу с формой
+    header("Location: index.html");
+}
+?>

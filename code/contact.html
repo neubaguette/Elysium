@@ -28,12 +28,12 @@
         </div>
     </div>
     <div class="form">
-        <form action="main.php" method="post">
+        <form id="contactForm" action="contact.php" method="post">
             <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="Your name..">
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
 
             <label for="email"></label>
-            <input type="text" id="email" name="email" placeholder="Your E-mail..">
+            <input type="text" id="email" name="email" placeholder="Your E-mail.." required>
 
             <label for="subject"></label>
             <textarea id="subject" name="subject" placeholder="Write your questions.." style="height:200px"></textarea>
@@ -41,6 +41,7 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+    <script src="/code/contact.js"></script>
     <div class="map">
         <h2>Find Elysium on the map</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182321.81883292345!2d25.929835201210846!3d44.43770726561298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2z0JHRg9GF0LDRgNC10YHRgiwg0KDRg9C80YvQvdC40Y8!5e0!3m2!1sru!2sua!4v1715445808048!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

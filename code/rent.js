@@ -9,52 +9,38 @@ function hideDetailsButton(element) {
 }
 
 
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+    startSlider(modal); 
+}
 
-// document.getElementById("details-button-1").addEventListener("click", function() {
-//     openModal();
-// });
 
-// document.getElementById("details-button-2").addEventListener("click", function() {
-//     openModal();
-// });
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+    stopSlider(modal); 
+}
 
-// document.getElementById("details-button-3").addEventListener("click", function() {
-//     openModal();
-// });
+function startSlider(modal) {
+    let currentIndex = 0;
+    const slides = modal.querySelectorAll('.gallery-item'); 
+    const totalSlides = slides.length;
 
-// document.getElementById("details-button-4").addEventListener("click", function() {
-//     openModal();
-// });
+    function moveSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+    }
 
-// document.getElementById("details-button-5").addEventListener("click", function() {
-//     openModal();
-// });
+    function updateSlider() {
+        const galleryInner = modal.querySelector('.gallery-inner'); 
+        galleryInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
 
-// document.getElementById("details-button-6").addEventListener("click", function() {
-//     openModal();
-// });
+    
+    modal.sliderInterval = setInterval(moveSlide, 7000);
+}
 
-// document.getElementById("details-button-7").addEventListener("click", function() {
-//     openModal();
-// });
-
-// var modal = document.getElementById("myModal");
-// var closeButton = document.getElementsByClassName("close")[0];
-
-// // Функция открытия модального окна
-// function openModal() {
-//     modal.style.display = "block";
-// }
-
-// // Закрытие модального окна при клике на крестик
-// closeButton.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// // Закрытие модального окна при клике за его пределами
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-
+function stopSlider(modal) {
+    clearInterval(modal.sliderInterval); 
+}
